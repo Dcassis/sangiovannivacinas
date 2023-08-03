@@ -1,0 +1,15 @@
+*{
+  max-width: 1366px;
+}
+
+.nav-item a:hover{
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: .5s;
+  border-top: solid 5px #26aca3;
+}
+
+#whatsapp1 label:hover{
+  font-weight: bolder;
+  transition: .5s;
+}
