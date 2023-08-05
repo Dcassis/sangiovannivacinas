@@ -8,31 +8,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body style="background-color:#26aca3">
+  <body style="background-color:#26aca3;">
   
   <!--MENU-->
 
     <header>
-      <nav class="container-fluid navbar navbar-expand-lg position-fixed py-0" style="background-color: white;">
+      <nav class="container-fluid navbar navbar-expand-lg position-fixed" style="background-color: white;">
         <div class="container-fluid">
-          <a class="nav-link" aria-current="page" href="#one"><img src="./img/logomarca.png" alt="logo" width="220"></a>
+          <a class="nav-link" aria-current="page" href="#one"><img src="./img/logomarca.png" alt="logo" width="200"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-0 fs-5 px-5 d-flex flex" style="margin: 0 auto; padding:0 auto; border-bottom: 10px solid #26aca3;">
+              <li class="nav-item">
+                <a class="nav-link" href="#home" style="color: #26aca3; font-weight: bold;">Principal</a>
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#two" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #26aca3; font-weight: bold;">Início</a>
+                <a class="nav-link dropdown-toggle" href="#two" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #26aca3; font-weight: bold;">Institucional</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" style="color: #26aca3;" href="#two_1">Visão Geral</a></li>
-                  <li><a class="dropdown-item" style="color: #26aca3;" href="#two_2">Diretora Clínica</a></li>
-                  <li><a class="dropdown-item" style="color: #26aca3;" href="#two_3">Diretor Administrativo</a></li>
+                  <li><a class="dropdown-item" style="color: #26aca3;" href="#two_2">Diretoria</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" style="color: #26aca3;" href="#two_4">Localização</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#vac"  style="color: #26aca3; font-weight: bold;">Vacinas</a>
+                <a class="nav-link" href="#vacinas"  style="color: #26aca3; font-weight: bold;">Vacinas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#four"  style="color: #26aca3; font-weight: bold;">Nossos Serviços</a>
@@ -47,31 +49,30 @@
 
 <!--FOTOS-->
 
-      <main>
-        <section class="container-fluid bg-light">
-          <div class="col-12 d-flex py-2 w-100">
-            <div class="row mx-auto">
-              <img class="col-md-3 rounded-2" style="width:20rem" src="./img/recepcao.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
-              <img class="col-md-3 rounded-2" style="width:20rem" src="./img/briquedoteca.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
-              <img class="col-md-3 rounded-2" style="width:20rem" src="./img/espera2.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
-              <img class="col-md-3 rounded-2" style="width:20rem" src="./img/espera.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
+      <main id="home" >
+        <section class="container">
+          <div class="col d-flex">
+            <div class="row mx-auto g-1">
+              <img class="col-md-4 mt-2 mx-auto" style="width:22rem" src="./img/recepcao.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
+              <img class="col-md-4 mt-2 mx-auto" style="width:22rem" src="./img/briquedoteca.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
+              <img class="col-md-4 mt-2 mx-auto" style="width:22rem" src="./img/espera.jpeg" class="object-fit-sm-contain border rounded" alt="foto clínica">
             </div>
           </div>
         </section>
             
 <!--PRINCIPAL-->
 
-        <section class="bg-light" >
-         <figure class="container-fluid text-center py-4 bg-light">
+        <section id="two_1" class="bg-light" >
+         <figure class="container-fluid text-center py-1 bg-light">
           <blockquote class="blockquote">
-            <h1 class="pt-4" style="color: #26aca3; font-size:x-large; margin: 0 auto; padding:0 auto; border-top: 10px solid #26aca3;"><i><b>“O melhor lugar para cuidar de você!”</b></i></h1>
-            <p style="color: #26aca3; font-size: smaller; margin-top: 2rem;">San Giovanni Especialidades e Vacinas</p>
+            <h1 class="pt-4 display-5" style="color: #26aca3; margin: 0 auto; padding:0 auto; border-top: 10px solid #26aca3;"><i><b>“O melhor lugar para cuidar de você!”</b></i></h1>
+            <p style="color: #26aca3; margin-top: 2rem;">San Giovanni Especialidades e Vacinas</p>
             <a id="three" href="https://wa.me/5579981666116" target="_blank" >
-              <button class="btn text-light" style="background-color: #00a884;padding: 20px; border-radius: 20px;">
+              <button id="botao" class="btn text-light" style="background-color: #26aca3; padding: 20px; border-radius: 20px;">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
             </svg>
-             Marque sua consulta</button></a>
+             Agende sua vacina</button></a>
             </div>
           </blockquote>
         </figure> 
@@ -79,252 +80,422 @@
        
 <!--VISÃO GERAL-->
       
-    <section class="container-fluid mx-auto">
+    <section class="container mx-auto">
       <div class="row">
-        <div class="col-9 text-center mx-auto">  
-          <h3 id="two_1" style="color: white; text-align: center;">Visão Geral</h3>
-          <p style="color: white; text-align: justify; font-size: large; font-weight: 600;" >É com muito prazer que apresentamos a você nosso espaço, prepado com todo carinho para tornar o momento das suas consultas e vacinações seguro e especial.
+        <div class="col-12 px-4 text-center mx-auto">  
+          <h3 style="color: white; text-align: center;">Visão Geral</h3>
+          <p style="color: white; text-align: justify; font-size: large; font-stretch: semi-expanded; font-weight: 400;" >É com muito prazer que apresentamos nosso espaço, preparado com todo carinho para tornar o momento das suas consultas e vacinações seguro e especial.
           <br>Ambiente climatizado e muito bem organizado, priorizando todos os cuidados necessários para atender suas necessidades.
-          <br>Nossas salas estão preparadas com equipamentos de ponta, devidamente esterelizados. Além de salas para consultas médicas, odontológicas e tratamentos, temos também, nossa sala de vacinação munida de todas as vacinas para crianças e adultos.
+          <br>Nossas salas estão preparadas com equipamentos de ponta, devidamente esterelizados. Além de salas para consultas médicas, odontológicas e tratamentos, temos também nossa sala de vacinação, munida de todas as vacinas para crianças e adultos.
           <br>Falando em crianças, não podemos deixar de destacar nosso cantinho infantil, confortável e decorado especialmente para deixar as crianças e mamães bem a vontade, e com espaço reservado para os recém-nascidos.
-          <br>Você não precisa se preocupar, estamos empenhados em garantir o melhor atendimento de modo seguro e confortável.</p>
+          <br id="two_2" >Você não precisa se preocupar, estamos empenhados em garantir o melhor atendimento de modo seguro e confortável.</p>
         </div>
       </div>
     </section>
 
-  <!--ESPECIALISTAS-->  
+  <!--DIRETORIA-->  
 
   <section class="bg-light">
     <div class="container-fluid-md">
-      <h3 id="two_1" class="my-3" style="color: #26aca3; font-size:x-large; margin: 3px auto; padding:3px auto; text-align: center;border-bottom: 10px solid #26aca3;">Direção clínica e administrativa</h3>
+      <h3 id="two_1" class="my-3 display-5 py-4" style="color: #26aca3; text-align: center;">Direção clínica e administrativa</h3>
     </div>
     
-    <div class="container-fluid-sm" >
-      <div class="row container-fluid-sm mx-auto my-3">
+    <div class="container-md" >
+      <div class="row container-md mx-auto">
       
-        <div class="col-sm-4 card mx-auto" style="position:static; min-width: 38vw;">
-          <img src="./img/joao.png" class="card-img-top" style="height: 12rem;" alt="foto ortopedista">
-          <div class="card-body">
+        <div class="col-md-4 card mx-auto" style="position:static;">
+          <img src="./img/joao.png" class="card-img-top" alt="foto ortopedista">
+          <div class="card-body mx-auto my-2 text-center" style="height:11rem;">
             <h5 class="card-title"></h5>
             <p class="card-text fw-600">Ortopedista</p>
             <p class="card-text fw-600" >Diretor Administrativo</p>
             <p class="card-text fw-bold" >Dr. João Bourbon</p>
-            <a href="https://www.instagram.com/p/CukQ9qqOyCW/" target="_blank"  class="btn position-static fs-6" style="background-color: #26aca3;color: white">@dr.joaobourbon</a>
+            <a href="https://www.instagram.com/p/CukQ9qqOyCW/" target="_blank"  class="btn position-static text-wrap" style="background-color: #26aca3;color: white; font-size: small;">@dr.joaobourbon</a>
           </div>
         </div>
 
-        <div class="col-sm-4 card mx-auto" style="position:static;min-width: 38vw;">
-          <img src="./img/cibelle.png" class="card-img-top" style="height: 12rem" alt="foto médica">
-          <div class="card-body">
+        <div class="col-md-4 card mx-auto" style="position:static;">
+          <img src="./img/cibelle.png" class="card-img-top" alt="foto médica">
+          <div class="card-body mx-auto my-2 text-center" style="height:11rem;">
             <h5 class="card-title"></h5>
             <p class="card-text fw-600">Pediatra e Alergista Infantil</p>
             <p id="two_2" class="card-text fw-600">Diretora Clínica</p>
             <p class="card-text fw-bold">Dra. Cibelle Bourbon</p>
-            <a href="https://www.instagram.com/p/CukQ9qqOyCW/" target="_blank" class="btn position-static" style="background-color: #26aca3;color: white">@cibellebourbon.alergista</a>
+            <a href="https://www.instagram.com/p/CukQ9qqOyCW/" target="_blank" class="btn position-static text-wrap" style="background-color: #26aca3;color: white; font-size: small;">@cibellebourbon.alergista</a>
           </div>
         </div>
       </div>
     </div>  
   </section>
           
-<!--VACINAS-->
+<!--BANNER VACINAS-->
 
-  <section  class="bg-light">
-    <div class="container-sm bg-light">
-      <h1 id="vac" class="my-3 display-4 fw-bold text-center" style="color: #26aca3; border-bottom: 10px solid #26aca3;">Vacinas</h1>
-    </div>
-    
+  <section class="bg-light">
     <div id="carouselExampleSlidesOnly" class="carousel slide position-static mb-5" data-bs-ride="carousel">
       <div class="carousel-inner position-static">
         <div class="carousel-item active position-static">
-          <img src="./img/vacina.jpg" class="d-block w-100 position-static" style="height: 75vh;" alt="vacina">
+          <img src="./img/vacina3.jpg" class="d-block w-100 position-static" style="max-height: 70vh;" alt="vacina">
         </div>
         <div class="carousel-item position-static">
-          <img src="./img/vacina2.jpg" class="d-block w-100 position-static" style="height: 75vh;" alt="vacina">
+          <img src="./img/vacina2.jpg" class="d-block w-100 position-static" style="max-height: 70vh;" alt="vacina">
         </div>
         <div class="carousel-item position-static">
-          <img src="./img/vacina3.jpg" class="d-block w-100 position-static" style="height: 75vh;" alt="vacina">
+          <img src="./img/vacina.jpg" class="d-block w-100 position-static" style="max-height: 70vh;" alt="vacina">
         </div>
       </div>
     </div>
-
-  <div class="container-fluid-md mx-auto">
-    <div class="row mx-auto">
-      <div class="col-md-4">
-        <p class="d-inline-flex" >
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          Bacteriana Tetravalente (dTpª + IPV)
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body" style="width: 24vw" >
-            Previne as doenças: Difteria (Crupe), tétano, coqueluche (Pertussis) e poliomielite (Paralisia Infantil).
-          </div>
-        </div>
-      </div>
   
-      <div class="col-md-4">
-        <p class="d-inline-flex">
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-            Bacteriana Tetravalente (dTpª + IPV) GSK
-          </button>
-        </p>
-          <div class="collapse" id="collapseExample1">
-            <div class="card card-body" style="width: 24vw">
-              Previne a gripe em crianças e adultos.
-            </div>
-          </div>
-        </div>
-      
-      <div class="col-md-4">
-        <p class="d-inline-flex gap-1">
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-            Febre Amarela
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample2">
-          <div class="card card-body" style="width: 24vw">
-            A vacina protege apenas contra o vírus da febre amarela evitando casos graves e mortes causados por ele.
-          </div>
-        </div>
-      </div>  
+<!--VACINAS-->
+  <section> 
+    <div id="vacinas" class="container-md bg-light mt-5 py-5">
+      <h1 class="my-5 display-3 fw-bold text-center" style="color: #26aca3; border-bottom: 10px solid #26aca3;">Vacinas</h1>
     </div>
-  </div>
 
-  <div class="container-fluid-md mx-auto">
-    <div class="row mx-auto">
-      <div class="col-md-4">
-        <p class="d-inline-flex" >
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-          Febre Tifóide
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample3">
-          <div class="card card-body" style="width: 24vw">
-            É uma vacina utilizada para prevenção da febre tifoide, infecção aguda generalizada do sistema reticuloendotelial, do tecido linfóide intestinal e da vesícula biliar, causada pela Salmonella typhi.
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <p class="d-inline-flex">
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-            Gripe Tetravalente
-          </button>
-        </p>
-          <div class="collapse" id="collapseExample4">
-            <div class="card card-body" style="width: 24vw">
-              Previne a gripe em crianças e adultos.
-            </div>
-          </div>
-        </div>
-      
-      <div class="col-md-4">
-        <p class="d-inline-flex gap-1">
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-            Hepatite A VAQTA (de 1 ano até adulto)
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample5">
-          <div 
-          class="card card-body" style="width: 24vw">
-            A vacina é indicada para a prevenção da infecção causada pelo vírus da hepatite A
-          </div>
-        </div>
-      </div>  
-    </div>
-  </div>
-
-  <div class="container-fluid-md mx-auto">
-    <div class="row mx-auto">
-      <div class="col-md-4">
-      <p class="d-inline-flex" >
-        <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-          Hepetati A adulto (acima de 16 anos)
-        </button>
-        </p>
-        <div class="collapse" id="collapseExample6">
-          <div class="card card-body" style="width: 24vw">
-            ajuda a combater futuras infeções causada pelo vírus A da hepatite (HAV), também conhecida como “hepatite infecciosa”.
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <p class="d-inline-flex">
-          <button class="btn" style="width: 24vw; background-color: #26aca3;color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
-            Hepatite B adulto
-          </button>
+    <div class="container-md">
+      <div class="row text-center">
+        <div class="col-md" >
+          <p>
+            <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Bacteriana Tetravalente (dTpª + IPV)
+            </button>
           </p>
-          <div class="collapse" id="collapseExample7">
-            <div class="card card-body" style="width: 24vw">
-              Previne a infecção do fígado (hepatite) causada pelo vírus da hepatite B . É feita de vacina inativada, portanto, não tem como causar a doença.
+          <div class="collapse" id="collapseExample">
+            <div id="vac" class="card card-body mx-auto">
+              Previne as doenças: Difteria (Crupe), tétano, coqueluche (Pertussis) e poliomielite (Paralisia Infantil).
             </div>
           </div>
         </div>
-      
-      <div class="col-md-4">
-        <p class="d-inline-flex gap-1">
-          <button class="btn" style="width: 24vw;background-color: #26aca3;color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
-            Hepatite B infantil
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample8">
-          <div class="card card-body" style="width: 24vw">
-            Esta vacina serve para prevenir a infecção pelo vírus da hepatite B. - A eficácia do produto é superior a 95% e a duração da imunidade, de pelo menos dez anos.
+        <div class="col-md">
+          <p>
+            <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Bacteriana Tetravalente (dTpª + IPV) GSK
+            </button>
+          </p>
+            <div class="collapse" id="collapseExample1">
+              <div id="vac" class="card card-body mx-auto">
+                Previne a gripe em crianças e adultos.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>  
+          <div class="col-md">
+            <p>
+              <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                Febre Amarela
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div id="vac" class="card card-body mx-auto">
+                Previne o vírus da febre amarela evitando casos graves e mortes causados por ele.
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <p>
+              <button id="botaovac" class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+              Febre Tifóide
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample3">
+              <div id="vac" class="card card-body mx-auto">
+                Previnea febre tifoide, infecção aguda generalizada do sistema reticuloendotelial, do tecido linfóide intestinal e da vesícula biliar, causada pela Salmonella typhi.
+              </div>
+            </div>
+          </div>    
+          <div class="col-md">
+            <p>
+              <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                Gripe Tetravalente
+              </button>
+            </p>
+              <div class="collapse" id="collapseExample4">
+                <div id="vac" class="card card-body mx-auto">
+                  Previne a gripe em crianças e adultos.
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                  Hepatite A VAQTA (de 1 ano até adulto)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample5">
+                <div id="vac" class="card card-body mx-auto">
+                  Previne a infecção causada pelo vírus da hepatite A
+                </div>
+              </div>
+            </div>  
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                Hepetati A adulto (acima de 16 anos)
+                </button>
+              </p>
+            <div class="collapse" id="collapseExample6">
+              <div id="vac" class="card card-body mx-auto">
+                  Previne infeções causada pelo vírus A da hepatite (HAV), também conhecida como “hepatite infecciosa”.
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <p>
+              <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+              Hepatite B adulto
+              </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                  Previne a infecção do fígado (hepatite) causada pelo vírus da hepatite B . É feita de vacina inativada, portanto, não tem como causar a doença.
+                </div>
+              </div>
+            </div>        
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                  Hepatite B infantil
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample8">
+                <div id="vac" class="card card-body mx-auto">
+                  Previne a infecção pelo vírus da hepatite B. - A eficácia do produto é superior a 95% e a duração da imunidade, de pelo menos dez anos.
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Haemophilus B
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Hexavalente (dTpa, Hep.B, Hib, Pólio)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                HPV Quadrivalente (Gardasil)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                HPV nonavalente
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Meningite ACWY
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Meningite B
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Pentavalente acelular (dTpa, Pólio,Hib)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Pneumocócica 13V
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Rotavírus
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Tríplice Bacteriana (dTpa)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                  Tríplice Viral (SCR)
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Varicela
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <p>
+                <button class="btn" id="botaovac" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                Zoster
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample7">
+                <div id="vac" class="card card-body mx-auto">
+                Previne 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+  
+<!--BOTÃO AGENDA-->
+
+      <section class="container bg-light position-static">
+        <div class="row">
+          <div class="col text-center">              
+              <div class="mt-4">
+                <a id="four" href="https://wa.me/5579981666116" target="_blank" >
+                <button id="botao" class="btn text-light" style="background-color: #26aca3;padding: 20px; border-radius: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+                Agende sua vacina</button></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!--NOSSOS SERVIÇOS-->
+
+<section style="background-color: #26aca3;">
+  <div class="container-fluid-md">
+    <h3 id="two_1" class="my-2 display-5 py-5" style="color: white; text-align: center;">Nossos Serviços</h3>
+    <div class="container-md p-2 rounded-2">
+      <p class="w-75 mx-auto" style="color: white; text-align: justify; font-size: large; font-stretch: semi-expanded; font-weight: 400;" >Na San Giovanni Vacinas, você tem o conforto de agendar um horário na clínica ou solicitar atendimento externo e iremos até você, inclusive aos sábados pela manhã.
+      <div class="d-flex justify-content-around">
+        <img src="./img/servico1.png" class="object-fit-xxl-contain border rounded w-25" alt="serviços">
+        <img src="./img/servico2.png" class="object-fit-xxl-contain border rounded w-25" alt="serviços">
+        <img src="./img/servico3.png" class="object-fit-xxl-contain border rounded w-25" alt="serviços">
+      </div>
     </div>
   </div>
 </section>
 
-      <section class="container-fluid bg-light  position-static">
-        <div class="row p-2">
-          <div class="col-12 text-center">              
-              <div class="mt-4">
-                <a id="four" href="https://wa.me/5579981666116" target="_blank" >
-                <button class="btn text-light" style="background-color: #26aca3;padding: 20px; border-radius: 20px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg>
-                Marque sua consultas</button></a>
-              </div>
-            </div>
-          </div>
-        </section>
+<!--TÍTULO LOCALIZAÇÃO-->
 
-<!--LOCALIZAÇÃO-->
-
-        <section class="container-fluid bg-light">
+        <section class="container-fluid-md bg-light">
           <div class="row">
-            <div class="col-12 text-center">  
+            <div class="col text-center">  
               <h3 id="two_4" style="color: #26aca3; text-align: center; margin: 2rem auto; padding:0 auto; border-bottom: 10px solid #26aca3;">Localização</h3>
-            <div class="mx-auto text-center my-2">
-          </div>
-            <div class="card mb-4 mx-auto my-0 rounded-2" style="max-width: 60%; background-color: #26aca3;">
-              <div class="row">
-                <div class="col-md-4 rounded-2">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1827708978076!2d-37.067421525737586!3d-10.949562389209873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab30be28f762d%3A0xbde0d9857c37a4ca!2sCentro%20M%C3%A9dico%20Jardins!5e0!3m2!1spt-BR!2sbr!4v1691095267855!5m2!1spt-BR!2sbr" height="100%" referrerpolicy="no-referrer-when-down  grade"></iframe>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title text-light" style=" text-align: center;">San Giovanni Especialidades e Vacinas</h5>
-                    <p class="card-text text-light" style="text-align: center;">Av. Ministro Geraldo Barreto Sobral, nº 2131, sala 104 - Jardins, Aracaju - SE, 49026-010</p>
-                    <p class="card-text text-light" style="text-align: center;"><small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg></small> (79) 3012-2847</p>
+            </div>
+          </div>  
+        </section>
+              
+<!--LOCALIZAÇÃO-->   
+
+          <section class="container">
+            <div class="row mx-auto w-100 py-0">
+              <div class="col">        
+                <div class="card" style="background-color: #26aca3;">
+                  <div class="row">
+                    <div class="col-md-6" style="height: 32vh;">
+                      <iframe class="w-100" style="height: 32vh;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1827708978076!2d-37.067421525737586!3d-10.949562389209873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab30be28f762d%3A0xbde0d9857c37a4ca!2sCentro%20M%C3%A9dico%20Jardins!5e0!3m2!1spt-BR!2sbr!4v1691095267855!5m2!1spt-BR!2sbr" referrerpolicy="no-referrer-when-down  grade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title text-light" style=" text-align: center; font-weight: bolder;">San Giovanni Especialidades e Vacinas</h5>
+                        <p class="card-text text-light" style="text-align: center;">Av. Ministro Geraldo Barreto Sobral, nº 2131, sala 104 - Jardins, Aracaju - SE, 49026-010</p>
+                        <p class="card-text text-light" style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg> (79) 3012-2847</p>
+                        <p class="card-text text-light" style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                        </svg><b> www.sangiovannivacinas.com.br</b></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>  
-        </section>
+          </section>
 
 <!--RODAPÉ-->
 
   <footer id="five" class="container-md w-50">
-    <div class="grid text-center bg-light pb-2 my-3  rounded-2" style="color: #26aca3; font-weight: bold;">
+    <div class="grid text-center bg-light pb-2 my-3 rounded-2" style="color: #26aca3; font-weight: bold;">
       <img src="./img/logomarca.png" alt="logo marca" width=200>
       <div class="g-col-6 g-col-md-4"> San Giovanni Especialidades e Vacinas</div>
       <a href="https://goo.gl/maps/2SgCTaqjF7cq77F19" target="_blank" style="text-decoration: none;color:#26aca3 ;" ><div class="g-col-6 g-col-md-4">📍Centro Médico Jardins, 104</div></a>
@@ -338,7 +509,6 @@
     <p style="color: white; text-align: center; font-size: smaller;"><i> Copywrite © 2023 - Todos os direitos reservados - San Giovanni Especialidades e Vacinas</i></p>
   </div>
   </footer>
-
-    </body>
+</body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </html>

@@ -9,7 +9,23 @@
   border-top: solid 5px #26aca3;
 }
 
-#whatsapp1 label:hover{
-  font-weight: bolder;
-  transition: .5s;
+#botao:hover{
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);   
+  transition: 1s;
+}
+
+#botaovac{
+  width: 50vw; 
+  height: 9vh;
+  background-color: #26aca3;
+  color: white;
+}
+
+#vac{
+  margin-bottom: 1rem;
+  width: 50vw; 
+  height: auto;
+  background-color: white;
+  color: #26aca3;
 }
