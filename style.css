@@ -12,6 +12,15 @@
   border-top: solid 5px #26aca3;
 }
 
+.btn:hover{   
+  transition: 1.3s;
+  border-radius: 15px;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #26aca3;
+  border: #26aca3 5px solid;
+}
+
 #botao:hover{
   -ms-transform: scale(1.2);
   transform: scale(1.2);   
@@ -23,6 +32,11 @@
   height: 10vh;
   background-color: #26aca3;
   color: white;
+}
+#botaovac:hover{
+  background-color: white;
+  color: #26aca3;
+
 }
 
 #vac{
