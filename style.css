@@ -15,8 +15,6 @@
 .btn:hover{   
   transition: 1.3s;
   border-radius: 15px;
-  font-weight: bolder;
-  font-size: x-large;
   color: #26aca3;
   border: #26aca3 5px solid;
 }
