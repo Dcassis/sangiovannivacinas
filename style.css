@@ -1,8 +1,9 @@
 *{
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
   max-width: 1366px;
+  overflow-x: hidden;
 }
 
 .nav-item a:hover{
@@ -26,11 +27,16 @@
 }
 
 #botaovac{
-  width: 55vw; 
+  width: 100%; 
   height: 10vh;
   background-color: #26aca3;
   color: white;
 }
+
+#botaovac>p{
+  text-align: center;
+}
+
 #botaovac:hover{
   background-color: white;
   color: #26aca3;
@@ -38,11 +44,10 @@
 }
 
 #vac{
-  margin-bottom: 1rem;
-  width: 50vw; 
-  height: auto;
+  margin-bottom: 1rem; 
   background-color: white;
   color: #26aca3;
+  text-align: center;
 }
 
 #servicos:hover{
