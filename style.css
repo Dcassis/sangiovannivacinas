@@ -1,16 +1,49 @@
+@keyframes fade {
+  from{
+    transition: ease-in;
+    filter: blur(40px);
+    transform: scale(.3);
+  }
+}
+@keyframes fade2 {
+  from{
+    transition: ease-in;
+    filter: blur(40px);
+    transform: scale(.3);
+  }
+}
 *{
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1366px;
   overflow-x: hidden;
 }
 
+main{
+  height: 75vh;
+}
 .nav-item a:hover{
   font-weight: bolder;
   border-radius: 10px;
   transition: .5s;
   border-top: solid 5px #26aca3;
+}
+
+#animationPhotos{
+  animation-name:fade;
+  animation-duration: 1.5s;
+}
+
+#animationText1{
+  animation-name:fade2;
+  animation-duration: 1.5s;
+  animation-delay: .3s;
+}
+#animationText2{
+  animation-name: fade2;
+  animation-duration: 1.5s;
+  animation-delay: .6s;
 }
 
 .btn:hover{   
@@ -41,6 +74,12 @@
   background-color: white;
   color: #26aca3;
 
+}
+
+#carouselExampleSlidesOnly{
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
 #vac{
