@@ -104,6 +104,18 @@ header{
     }
 }
 
+#phone:hover{
+  font-weight: bolder
+}
+
+#insta:hover{
+  font-weight: bolder
+}
+
+#face:hover{
+  font-weight: bolder
+}
+
 #address-display{
   top: 20em; 
   right: 1em; 
@@ -242,6 +254,7 @@ header{
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%
 }
 
 .mensagem-lgpd {
@@ -252,13 +265,13 @@ header{
     right: 0;
     background-color: #2e706e;
     color: white;
-    padding:0 4rem;
+    padding:0 .3rem;
     text-align: center;
   }
   
   .mensagem-lgpd p{
     color: white;
-    margin: .5rem 3rem .5rem 3rem;
+    margin: .5rem 1rem .5rem 1rem;
     padding: .3rem 3rem;
     font-size: .8rem;
   }
