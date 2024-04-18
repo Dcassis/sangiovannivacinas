@@ -1,6 +1,6 @@
 *{
   box-sizing:border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
@@ -189,25 +189,10 @@ header{
   transition: .5s;
   }
 
-.container-socios{
-  min-width: 300px;
-  max-width: 400px;
-  border-radius: 20px;
-  padding: 2rem;
-  gap:1rem;
-  background-color: #f6efefcf
-}
-
-.socios{
-  max-width: 400px;
-  border-radius:20px
-}
-
-
   // CONFIGURAÇÃO DO POP-UP - MODAL
 
-  #fotoPopUp >img{
-    height: 30vh
+  #fotoPopUp{
+    max-width: 500px
   }
 
   #popup-container {
@@ -263,9 +248,9 @@ header{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #2e706e;
-    color: white;
-    padding:0 .3rem;
+    background-color: #334B49;
+    color: white; 
+    padding:0 .3rem;  
     text-align: center;
   }
   
@@ -273,14 +258,13 @@ header{
     color: white;
     margin: .5rem 1rem .5rem 1rem;
     padding: .3rem 3rem;
-    font-size: .8rem;
   }
 
   #btnAceitarLGPD{
     padding:.3rem;
     color: white; 
     border: 2px solid white;
-    background-color: #26aca3;
+    background-color: #96B1AD;
     border-radius: 10px;
     cursor: pointer;
   }
